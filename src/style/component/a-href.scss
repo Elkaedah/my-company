@@ -1,0 +1,9 @@
+/** @format */
+
+a {
+	text-decoration: none;
+	@include font-roboto;
+}
+a:hover {
+	color: $tertiary-color;
+}

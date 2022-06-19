@@ -1,0 +1,10 @@
+/** @format */
+
+$roboto: "Roboto", sans-serif;
+
+@mixin font-roboto($size: x-larger, $weight: 400, $color: $quartenary-color) {
+	font-family: $roboto;
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+}

@@ -1,0 +1,41 @@
+/** @format */
+
+.fixed {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	padding-top: 2%;
+	right: 0;
+	left: 0;
+	background-color: $primary-color;
+	@include shadow-one;
+}
+
+.navbar {
+	margin-inline-start: 2%;
+	@include display-grid($grid-columns: 1fr 5fr);
+	grid-template-areas: "logo comp-name ";
+	.logo {
+		grid-area: logo;
+		width: auto;
+		height: 56px;
+		object-fit: contain;
+	}
+	h1 {
+		grid-area: comp-name;
+		@include font-roboto($size: xx-large, $weight: 900);
+	}
+}
+
+.navbar-link {
+	margin: 2% 2% 0 2%;
+	padding-bottom: 1%;
+	@include display-grid($justify: strech);
+}
+
+.slide-navbar-link {
+	background-color: $primary-color;
+	li {
+		list-style-type: none;
+		margin-block-end: 5%;
+	}
+}

@@ -1,0 +1,26 @@
+/** @format */
+
+.split-home {
+	@include display-grid($grid-columns: 1fr 5fr, $justify: strech);
+}
+.card {
+	@include shadow-one($opacity: 0.3);
+	padding: 3%;
+	margin: 3% 0;
+	border-radius: 20px;
+}
+.grid-card {
+	@include display-grid($grid-columns: 1fr 1fr 1fr);
+}
+.grid-news {
+	margin: 5% 0;
+}
+.news-path {
+	padding: 1% 0;
+	// background-color: #421232;
+	display: flex;
+	justify-content: start;
+	align-items: stretch;
+	@include font-roboto;
+	@include shadow-one;
+}

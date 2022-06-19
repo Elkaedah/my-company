@@ -1,0 +1,10 @@
+/** @format */
+
+$primary-color: #ffffff;
+$secondary-color: #e1f4f3;
+$tertiary-color: #333333;
+$quartenary-color: #706c61;
+
+@mixin shadow-one($opacity: 0.2) {
+	box-shadow: 3px 3px 2px 1px rgba($quartenary-color, $opacity);
+}

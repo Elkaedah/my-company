@@ -1,0 +1,11 @@
+/** @format */
+
+@mixin display-grid(
+	$grid-columns: repeat(auto-fit, minmax(180px, 1fr)),
+	$justify: left
+) {
+	display: grid;
+	grid-template-columns: $grid-columns;
+	justify-items: $justify;
+	align-items: start;
+}
